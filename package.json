@@ -6,13 +6,12 @@
     "name": "Zackarias Madsen"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/zackebth/rm2Flash"
   },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "grunt",
     "test": "karma start"
   },
   "dependencies": {
