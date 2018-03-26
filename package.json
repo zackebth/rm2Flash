@@ -1,13 +1,9 @@
 {
   "name": "rm2flash",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Flash message",
   "author": {
     "name": "Zackarias Madsen"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zackebth/rm2Flash"
   },
   "main": "index.js",
   "license": "MIT",
