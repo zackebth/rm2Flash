@@ -15,24 +15,29 @@ module.exports = function(config) {
         exclude: [],
 
         preprocessors: {
-            'src/*.js': ['babel']
+            'src/*.js': ['coverage']
         },
 
-        babelPreprocessor: {
-            options: {
-                presets: ['es2015'],
-                sourceMap: 'inline'
-            },
-            filename: function(file) {
-                return file.originalPath.replace(/\.js$/, '.es5.js');
-            },
-            sourceFileName: function(file) {
-                return file.originalPath;
-            }
+        // babelPreprocessor: {
+        //     options: {
+        //         presets: ['es2015'],
+        //         sourceMap: 'inline'
+        //     },
+        //     filename: function(file) {
+        //         return file.originalPath.replace(/\.js$/, '.es5.js');
+        //     },
+        //     sourceFileName: function(file) {
+        //         return file.originalPath;
+        //     }
+        // },
+
+
+        reporters: ['progress', 'coverage'],
+
+        coverageReporter: {
+          type : 'html',
+          dir : 'coverage/'
         },
-
-
-        reporters: ['progress'],
 
         port: 9876,
 
