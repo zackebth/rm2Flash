@@ -8,8 +8,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "karma start --report clover",
-    "scrutinizer": "istanbul cover --report clover test/*_test.js"
+    "test": "karma start --report clover"
   },
   "dependencies": {
     "angular": "^1.4.8"
